@@ -1,19 +1,19 @@
 function setup() {
     createCanvas(400, 400);
-    background(100);
-
-    // var circleSize = 10;
-    
-    // for(var i = circleSize/2; i < width; i = i + circleSize*1.25){
-    //     ellipse(i, circleSize/2, circleSize); 
-    //     console.log("the value of i is now: ", i);
-    // }
-
-    for(var i = 0; i < 10; i++) {
-        
-    }
+    noStroke();
 }
 
 function draw() {
-
-}
+    background(208, 119, 122); 
+     translate(-50, -50);
+     scale(1.5);
+     
+     var step = 6;
+     for (var y = 0; y <= height; y += step) {
+       for (var x = 0; x <= width; x += step) { 
+         rotate(PI/11500);
+         fill(255, 175, 195);
+         ellipse(x, y, 4, 7);
+       }
+     }
+   } 
